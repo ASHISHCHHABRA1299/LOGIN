@@ -65,7 +65,7 @@ public class signup extends AppCompatActivity  {
            Toast.makeText(this, "PLEASE ENTER PASSWORD", Toast.LENGTH_SHORT).show();
            return;
        }
-       progressDialog.setMessage("REGISTERING USER...");
+       progressDialog.setMessage(" LOGGING IN...");
        progressDialog.show();
        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                    @Override
